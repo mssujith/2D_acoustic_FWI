@@ -1,0 +1,40 @@
+==========================================
+SLURM_CLUSTER_NAME = param-brahma
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = rahul
+SLURM_JOB_ID = 4438534
+SLURM_JOB_NAME = check_hyb
+SLURM_JOB_NODELIST = cn067
+SLURM_JOB_USER = mssujith
+SLURM_JOB_UID = 7176
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 29718
+SLURM_SUBMIT_DIR = /home/mssujith/HYBRID/checker
+SLURM_CPUS_ON_NODE = 48
+SLURM_NTASKS = 48
+SLURM_TASK_PID = 29718
+==========================================
+./inversion.py:256: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+
+
+
+
+
+************************************************** E N D    O F    I N V E R S I O N **************************************************
+-------------------------------------------------------------------------------------------------------------------
+Grid size                  : 97 x 153
+Grid discretization        : dz = 15, dx = 70
+PML boundary layers        : 10
+Frequencies used           : [0.1 0.2 0.4 0.9 2.  4.5] Hz
+-------------------------------------------------------------------------------------------------------------------
+Total iterarions  (GN)     : 10
+Total iterarions  (NLCG)   : 51
+Initial residual           : 20221249.129884463
+Minimised residual         : 0.09323928729200079
+-------------------------------------------------------------------------------------------------------------------
+The inversion was completed in 302 min, 27 sec

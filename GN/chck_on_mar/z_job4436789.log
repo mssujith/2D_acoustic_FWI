@@ -1,0 +1,37 @@
+==========================================
+SLURM_CLUSTER_NAME = param-brahma
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = rahul
+SLURM_JOB_ID = 4436789
+SLURM_JOB_NAME = gn_marmousi
+SLURM_JOB_NODELIST = cn[040,097,116-117,156-157,164,167]
+SLURM_JOB_USER = mssujith
+SLURM_JOB_UID = 7176
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 37448
+SLURM_SUBMIT_DIR = /home/mssujith/GN/chck_on_mar
+SLURM_CPUS_ON_NODE = 1
+SLURM_NTASKS = 32
+SLURM_TASK_PID = 37448
+==========================================
+
+
+
+
+
+************************************************** E N D    O F    I N V E R S I O N **************************************************
+-------------------------------------------------------------------------------------------------------------------
+Grid size            : 80 x 200
+Grid discretization  : dz = 10, dx = 100
+PML boundary layers  : 10
+Frequencies used     : [0.1 0.2 0.4 0.9 2.  4.5] Hz
+-------------------------------------------------------------------------------------------------------------------
+Total iterarions     : 10
+Initial residual     : 72466.94020255208
+Minimised residual   : 146.1480665879465
+-------------------------------------------------------------------------------------------------------------------
+The inversion was completed in 540 min, 31 sec

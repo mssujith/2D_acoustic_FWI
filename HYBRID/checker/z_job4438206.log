@@ -1,0 +1,46 @@
+==========================================
+SLURM_CLUSTER_NAME = param-brahma
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = rahul
+SLURM_JOB_ID = 4438206
+SLURM_JOB_NAME = check_hyb
+SLURM_JOB_NODELIST = gpu020
+SLURM_JOB_USER = mssujith
+SLURM_JOB_UID = 7176
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 48814
+SLURM_SUBMIT_DIR = /home/mssujith/HYBRID/checker
+SLURM_CPUS_ON_NODE = 32
+SLURM_NTASKS = 32
+SLURM_TASK_PID = 48814
+==========================================
+./inversion.py:256: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  plt.figure()
+Traceback (most recent call last):
+  File "./inversion.py", line 287, in <module>
+    plt.plot(res, color = 'red', ls = 'o')
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 2759, in plot
+    **({"data": data} if data is not None else {}), **kwargs)
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/axes/_axes.py", line 1632, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 312, in __call__
+    yield from self._plot_args(this, kwargs)
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 538, in _plot_args
+    return [l[0] for l in result]
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 538, in <listcomp>
+    return [l[0] for l in result]
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 533, in <genexpr>
+    for j, label in enumerate(labels))
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 351, in _makeline
+    seg = mlines.Line2D(x, y, **kw)
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/lines.py", line 366, in __init__
+    self.set_linestyle(linestyle)
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/lines.py", line 1122, in set_linestyle
+    _api.check_in_list([*self._lineStyles, *ls_mapper_r], ls=ls)
+  File "/home/apps/anaconda3/lib/python3.7/site-packages/matplotlib/_api/__init__.py", line 129, in check_in_list
+    raise ValueError(msg)
+ValueError: 'o' is not a valid value for ls; supported values are '-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted'

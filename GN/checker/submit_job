@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=gn_checker
+#SBATCH --output=z_job%j.log
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --time=10:00:00
+#SBATCH --mem=0
+#SBATCH --nodes=8
+#SBATCH --ntasks=128
+# #SBATCH --MinCPUsNode=8
+# #SBATCH --mail-type=ALL
+# #SBATCH --mail-user=sujith.ms@students.iiserpune.ac.in
+
+module load python/3.7
+
+python ./inversion.py
